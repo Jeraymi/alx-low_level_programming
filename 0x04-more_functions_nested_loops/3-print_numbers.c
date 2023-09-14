@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
-*print_numbers - print 0123456789
-* owned by Bwave ICT
-*Return: void
-*/
-
+ * print_numbers - print the numbers from 0 to 9
+ * Description: You can only use _putchar twice
+ */
 void print_numbers(void)
 {
-	char c;
+	int i;
 
-	for (c = '0'; c <= '9'; c++)
+	i = 0;
+	while (i < 10)
 	{
-	_putchar(c);
+		_putchar(i + '0');
+		i++;
 	}
 	_putchar('\n');
 }
